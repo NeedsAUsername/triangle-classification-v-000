@@ -1,7 +1,7 @@
 class Triangle
-  attr_accessor :kind
+    attr_accessor :kind
 
-  initialize(kind)
-    @kind = kind
+    def initialize(kind)
+        @kind = kind
     end 
 end
