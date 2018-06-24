@@ -6,7 +6,7 @@ class Triangle
             raise TriangleError
         end
         lengths = [length, length2, length3].sort
-        if lengths[0] + lengths[1] < lengths[2]
+        if lengths[0] + lengths[1] <= lengths[2]
             raise TriangleError
         end
         if length == length2 && length == length3
