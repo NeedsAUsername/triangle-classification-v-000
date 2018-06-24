@@ -2,9 +2,9 @@ class Triangle
     attr_accessor :kind
 
     def initialize(length, length2, length3)
-        if length == 0 || length2 == 0 || length3 == 0
+        if length <= 0 || length2 <= 0 || length3 <= 0
             raise TriangleError
-        end 
+        end
         if length == length2 && length == length3
             @kind = :equilateral
         elsif length == length2 || length == length3 || length2 == length3
