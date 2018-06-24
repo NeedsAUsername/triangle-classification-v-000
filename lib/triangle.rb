@@ -8,6 +8,8 @@ class Triangle
             @kind = "isosceles"
         elsif length != length2 && length != length3
             @kind = "scalene"
-        end 
+        end
     end
+
+    class TriangleError < 
 end
