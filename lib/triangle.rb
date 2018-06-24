@@ -6,6 +6,8 @@ class Triangle
             @kind = "equilateral"
         elsif length == length 2 || length == length3 || length2 == length3
             @kind = "isosceles"
-        elsif 
+        elsif length != length2 && length != length3
+            @kind = "scalene"
+        end 
     end
 end
