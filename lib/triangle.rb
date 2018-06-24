@@ -3,11 +3,11 @@ class Triangle
 
     def initialize(length, length2, length3)
         if length == length2 && length == length3
-            @kind = "equilateral"
+            @kind = :equilateral
         elsif length == length2 || length == length3 || length2 == length3
-            @kind = "isosceles"
+            @kind = :isosceles
         elsif length != length2 && length != length3
-            @kind = "scalene"
+            @kind = :scalene
         end
     end
 
